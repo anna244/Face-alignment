@@ -1,5 +1,12 @@
-/data
+/app/__pycache__
+/notebooks/.ipynb_checkpoints
+/data/*
+!/data/.gitkeep
+/df_cache/*
+!/df_cache/.gitkeep
 /datasets
 /model
-/model_weights
+/model_weights/*
+!/model_weights/.gitkeep
 /results/*.pkl
+/test

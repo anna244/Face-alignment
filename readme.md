@@ -32,3 +32,8 @@ https://www.researchgate.net/publication319277818_Deep_Alignment_Network_A_Convo
 ### График модели ONet для датасетов 300W и Menpo
 
 ![alt text](results/AUC_300W_Onet.png) ![alt text](results/AUC_MenpoONet.png)
+
+### Запуск внутри Docker
+
+1. Запустить сборку образа с помощью `make build`
+2. Запустить jupyter с помощью команды `make start`
