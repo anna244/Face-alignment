@@ -1,0 +1,5 @@
+/data
+/datasets
+/model
+/model_weights
+/results/*.pkl
