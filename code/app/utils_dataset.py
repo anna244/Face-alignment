@@ -9,8 +9,7 @@ import torch.utils.data
 from PIL import Image
 from sklearn.model_selection import train_test_split
 
-import settings
-
+from . import settings
 from .utils import get_rectangle, load_pts
 
 
@@ -77,7 +76,6 @@ class ImagesDataset(torch.utils.data .Dataset):
     image = Image.open(image_path).convert('RGB')
 
     real_landmarks = self.df["real_landmarks"][idx]
-
 
     x1 = int(self.df["rect_x1"][idx])
     y1 = int(self.df["rect_y1"][idx])

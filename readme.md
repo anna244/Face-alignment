@@ -27,11 +27,11 @@ https://www.researchgate.net/publication319277818_Deep_Alignment_Network_A_Convo
 
 ### Графики модели DAN для датасетов 300W и Menpo
 
-![alt text](results/AUC_300W_DAN_tr2.png) ![alt text](results/AUC_Menpo_DAN_tr2.png)
+![alt text](code/results/AUC_300W_DAN_tr2.png) ![alt text](code/results/AUC_Menpo_DAN_tr2.png)
 
 ### График модели ONet для датасетов 300W и Menpo
 
-![alt text](results/AUC_300W_Onet.png) ![alt text](results/AUC_MenpoONet.png)
+![alt text](code/results/AUC_300W_Onet.png) ![alt text](code/results/AUC_MenpoONet.png)
 
 ### Запуск внутри Docker
 

@@ -4,7 +4,7 @@ import dlib
 import numpy as np
 from scipy.integrate import simpson
 
-import settings
+from . import settings
 
 
 def seed_everything(seed: int):

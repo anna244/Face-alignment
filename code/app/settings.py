@@ -11,8 +11,14 @@ RANDOM_STATE = 42
 FACE_DETECTOR_MODEL_PATH = str(ROOT_DIR / 'model_weights/mmod_human_face_detector.dat')
 SHAPE_PREDICTOR_MODEL_PATH = str(ROOT_DIR / 'model_weights/shape_predictor_68_face_landmarks.dat')
 DF_CACHE_DIR = str(ROOT_DIR / 'df_cache')
-STUDY_MODEL_WEIGHT = str(ROOT_DIR / 'model_weights')
+STUDY_MODEL_WEIGHTS = str(ROOT_DIR / 'model_weights')
 
+IMAGE_DIRS_TRAIN = (
+        str(ROOT_DIR / 'data/300W/train/*.jpg'), 
+        str(ROOT_DIR / 'data/300W/train/*.png'),
+        str(ROOT_DIR / 'data/Menpo/train/*.jpg'), 
+        str(ROOT_DIR / 'data/Menpo/train/*.png'), 
+)
 IMAGE_DIRS_300W_TRAIN = (
         str(ROOT_DIR / 'data/300W/train/*.jpg'), 
         str(ROOT_DIR / 'data/300W/train/*.png'),

@@ -1,10 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import seaborn as sns
 from IPython.display import clear_output
-
-sns.set_style('whitegrid')
-plt.rcParams.update({'font.size': 15})
 
 
 def plot_losses(train_losses, val_losses, train_RMSE, val_RMSE, thres=0.08, step=0.0001, common_val_auc_0_08=None, image_data = None):

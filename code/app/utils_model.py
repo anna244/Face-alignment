@@ -3,8 +3,7 @@ import numpy as np
 import torch
 from tqdm.notebook import tqdm
 
-import settings
-
+from . import settings
 from .utils import (ced_auc, count_avg_norm_dist, count_avg_norm_dist_butch,
                     upsample_landmarks)
 from .utils_dataset import ImagesDataset
@@ -184,7 +183,7 @@ def model_inference(model, val_loader, tqdm_desc=''):
 
 def test_dlib(df):
     predictor = dlib.shape_predictor(settings.SHAPE_PREDICTOR_MODEL_PATH)
-    test_dataset_dlib = ImagesDataset(df, image_size = None, transform=None)             
+    test_dataset_dlib = ImagesDataset(df, image_size=None, transform=None)             
 
     RMSE_dlib = []
     for index in tqdm(range(len(test_dataset_dlib))):

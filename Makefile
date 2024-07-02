@@ -4,12 +4,7 @@ build:
 	docker rm fr || true
 	docker build . -t fr --progress=plain
 	docker create --name fr \
-		--mount type=bind,source="$(shell pwd)/app",target=/app \
-		--mount type=bind,source="$(shell pwd)/notebooks",target=/notebooks \
-		--mount type=bind,source="$(shell pwd)/data",target=/data \
-		--mount type=bind,source="$(shell pwd)/df_cache",target=/df_cache \
-		--mount type=bind,source="$(shell pwd)/model_weights",target=/model_weights \
-		--mount type=bind,source="$(shell pwd)/results",target=/results \
+		--mount type=bind,source="$(shell pwd)/code",target=/code \
 		-u $(shell id -u ${USER}):$(shell id -g ${USER}) \
 		-p 8888:8888 \
     	--gpus all \
