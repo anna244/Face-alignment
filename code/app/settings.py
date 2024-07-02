@@ -36,7 +36,7 @@ IMAGE_DIRS_MENPO_TEST = (
         str(ROOT_DIR / 'data/Menpo/test/*.png'), 
 )
 
-IMAGE_SIZE = 48
+IMAGE_SIZE = 112
 BATCH_SIZE = 64
 DATA_TRANSFORMS = {
     'train': v2.Compose([

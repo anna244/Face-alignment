@@ -16,14 +16,14 @@
 https://arxiv.org/pdf/1604.02878
 + DAN
 
-https://www.researchgate.net/publication319277818_Deep_Alignment_Network_A_Convolutional_Neural_Network_for_Robust_Face_Alignment
+https://www.researchgate.net/publication/319277818_Deep_Alignment_Network_A_Convolutional_Neural_Network_for_Robust_Face_Alignment
 
 ## Результаты
 
 | Датасет  | DLIB |   DAN    |  ONet  |
 | ---------| -----|--------- |------
-| 300W     | 0.66 |   0.57   |  0.45 |      
-| Menpo    | 0.49 |   0.55   |  0.38 | 
+| 300W     | 0.67 |   0.56   |  0.53 |      
+| Menpo    | 0.50 |   0.52   |  0.50 | 
 
 ### Графики модели DAN для датасетов 300W и Menpo
 
